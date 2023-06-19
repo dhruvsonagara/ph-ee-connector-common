@@ -23,7 +23,13 @@ public class DividendDistribution {
     private DateOfBirth dueDate;
     private String dividendRate;
 
+<<<<<<< HEAD
     public DividendDistribution() {}
+=======
+    public DividendDistribution() {
+        super();
+    }
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 
     public DateOfBirth getDueDate() {
         return this.dueDate;

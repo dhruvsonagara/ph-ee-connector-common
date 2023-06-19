@@ -25,7 +25,13 @@ public class Currency {
     private String sign;
     private Integer scale;
 
+<<<<<<< HEAD
     public Currency() {}
+=======
+    public Currency() {
+        super();
+    }
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 
     public String getCode() {
         return this.code;

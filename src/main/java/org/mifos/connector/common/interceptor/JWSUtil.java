@@ -6,24 +6,40 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+=======
+import java.io.IOException;
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 import java.nio.charset.Charset;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+<<<<<<< HEAD
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+=======
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import org.mifos.connector.common.channel.dto.PhErrorDTO;
 import org.mifos.connector.common.exception.PaymentHubErrorCategory;
 import org.mifos.connector.common.util.Constant;
+<<<<<<< HEAD
 import org.springframework.http.HttpMethod;
 import static org.springframework.http.HttpHeaders.CONTENT_TYPE;
+=======
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 
 @Slf4j
 public final class JWSUtil {
@@ -138,6 +154,11 @@ public final class JWSUtil {
      * @return data for verification in form of string
      * @throws IOException
      *             throws as part of input stream
+<<<<<<< HEAD
+=======
+     * @throws ServletException
+     *             inherited from functional chain
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
      */
     public static String parseBodyPayload(HttpServletRequest request) throws IOException {
         log.debug("Content-type: {}", request.getHeader(CONTENT_TYPE));
@@ -168,11 +189,16 @@ public final class JWSUtil {
     /**
      * Use to parse the string data from the multipart data passed in api
      *
+<<<<<<< HEAD
      * @param request
+=======
+     * @param httpServletRequest
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
      *            request object passed to the controller
      * @return multipart data in form of string
      * @throws IOException
      */
+<<<<<<< HEAD
     public static String parseFormData(HttpServletRequest request) throws IOException {
         log.debug("Parsing form data");
         String contentTypeHeaderValue = request.getHeader(CONTENT_TYPE);
@@ -208,6 +234,13 @@ public final class JWSUtil {
                     partContent.append("\n");
                 }
             }
+=======
+    public static String parseFormData(HttpServletRequest httpServletRequest) throws ServletException, IOException {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Part part : httpServletRequest.getParts()) {
+            String partString = IOUtils.toString(part.getInputStream(), Charset.defaultCharset());
+            stringBuilder.append(partString);
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
         }
         return partContent.toString().trim();
     }

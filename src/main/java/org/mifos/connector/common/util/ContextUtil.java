@@ -20,8 +20,11 @@ import java.util.TimeZone;
 
 public final class ContextUtil {
 
+<<<<<<< HEAD
     private ContextUtil() {}
 
+=======
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
     private static final SimpleDateFormat LOCAL_DATE_TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
     private static final DecimalFormat AMOUNT_FORMAT = new DecimalFormat("#.####");
     private static final SimpleDateFormat DATE_HEADER_FORMATTER = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z", Locale.ENGLISH);

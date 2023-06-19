@@ -25,7 +25,13 @@ public class Action {
     private String description;
     private String transactionType;
 
+<<<<<<< HEAD
     public Action() {}
+=======
+    public Action() {
+        super();
+    }
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 
     public String getIdentifier() {
         return this.identifier;

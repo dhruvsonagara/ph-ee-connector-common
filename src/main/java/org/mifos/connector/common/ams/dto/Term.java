@@ -24,6 +24,7 @@ public class Term {
     private TimeUnit timeUnit;
     private InterestPayable interestPayable;
 
+<<<<<<< HEAD
     public Term() {}
 
     public Integer getPeriod() {
@@ -42,6 +43,28 @@ public class Term {
         }
     }
 
+=======
+    public Term() {
+        super();
+    }
+
+    public Integer getPeriod() {
+        return this.period;
+    }
+
+    public void setPeriod(final Integer period) {
+        this.period = period;
+    }
+
+    public String getTimeUnit() {
+        if (this.timeUnit != null) {
+            return this.timeUnit.name();
+        } else {
+            return null;
+        }
+    }
+
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
     public void setTimeUnit(final String timeUnit) {
         if (timeUnit != null) {
             this.timeUnit = TimeUnit.valueOf(timeUnit);

@@ -38,7 +38,13 @@ public class ProductDefinition {
     private Boolean flexible;
     private Boolean active;
 
+<<<<<<< HEAD
     public ProductDefinition() {}
+=======
+    public ProductDefinition() {
+        super();
+    }
+>>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 
     public String getType() {
         return this.type.name();
