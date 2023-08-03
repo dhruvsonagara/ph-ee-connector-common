@@ -39,12 +39,16 @@ public class ProductDefinition {
     private Boolean active;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public ProductDefinition() {}
 =======
     public ProductDefinition() {
         super();
     }
 >>>>>>> a821874 (Resolved errors of checkstyle with spotless)
+=======
+    public ProductDefinition() {}
+>>>>>>> 7ae1b04 (solved checkstyle errors manually and updated readme class)
 
     public String getType() {
         return this.type.name();

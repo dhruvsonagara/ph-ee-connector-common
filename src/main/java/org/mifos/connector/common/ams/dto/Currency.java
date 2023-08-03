@@ -26,12 +26,16 @@ public class Currency {
     private Integer scale;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Currency() {}
 =======
     public Currency() {
         super();
     }
 >>>>>>> a821874 (Resolved errors of checkstyle with spotless)
+=======
+    public Currency() {}
+>>>>>>> 7ae1b04 (solved checkstyle errors manually and updated readme class)
 
     public String getCode() {
         return this.code;

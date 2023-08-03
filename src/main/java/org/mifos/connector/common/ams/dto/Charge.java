@@ -28,12 +28,16 @@ public class Charge {
     private Double amount;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Charge() {}
 =======
     public Charge() {
         super();
     }
 >>>>>>> a821874 (Resolved errors of checkstyle with spotless)
+=======
+    public Charge() {}
+>>>>>>> 7ae1b04 (solved checkstyle errors manually and updated readme class)
 
     public String getActionIdentifier() {
         return this.actionIdentifier;

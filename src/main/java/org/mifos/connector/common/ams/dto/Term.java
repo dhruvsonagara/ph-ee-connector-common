@@ -25,6 +25,7 @@ public class Term {
     private InterestPayable interestPayable;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Term() {}
 
     public Integer getPeriod() {
@@ -47,6 +48,9 @@ public class Term {
     public Term() {
         super();
     }
+=======
+    public Term() {}
+>>>>>>> 7ae1b04 (solved checkstyle errors manually and updated readme class)
 
     public Integer getPeriod() {
         return this.period;

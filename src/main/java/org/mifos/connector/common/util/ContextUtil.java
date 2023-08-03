@@ -19,6 +19,11 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 public final class ContextUtil {
+<<<<<<< HEAD
+=======
+
+    private ContextUtil() {}
+>>>>>>> 7ae1b04 (solved checkstyle errors manually and updated readme class)
 
 <<<<<<< HEAD
     private ContextUtil() {}

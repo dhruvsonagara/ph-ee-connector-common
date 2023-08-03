@@ -24,12 +24,16 @@ public class DividendDistribution {
     private String dividendRate;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public DividendDistribution() {}
 =======
     public DividendDistribution() {
         super();
     }
 >>>>>>> a821874 (Resolved errors of checkstyle with spotless)
+=======
+    public DividendDistribution() {}
+>>>>>>> 7ae1b04 (solved checkstyle errors manually and updated readme class)
 
     public DateOfBirth getDueDate() {
         return this.dueDate;

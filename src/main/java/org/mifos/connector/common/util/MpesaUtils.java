@@ -3,13 +3,9 @@ package org.mifos.connector.common.util;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-<<<<<<< HEAD
 public final class MpesaUtils {
 
     private MpesaUtils() {}
-=======
-public class MpesaUtils {
->>>>>>> a821874 (Resolved errors of checkstyle with spotless)
 
     public static String mpesaChannelRequestToChannelRequestConvertor(String channelRequest) {
 
